@@ -1,17 +1,25 @@
+.navbar-container {
+  background-color: rgb(185, 247, 185);
+}
 .navbar {
   position: sticky;
   top: 0;
   left: 0;
   width: 100%;
   height: 80px;
-  background-color: rgb(134, 133, 133);
+  background-color: rgb(185, 247, 185);
   display: flex;
-  z-index: 2;
+  z-index: 10;
+}
+
+.logo {
+  background-color: rgb(185, 247, 185);
 }
 
 .logo img {
   max-width: 90px;
   margin: 10px 0 0 50px;
+  background-color: rgb(185, 247, 185);
 }
 
 .primary-nav {
@@ -19,6 +27,7 @@
   position: absolute;
   top: 0;
   right: 50px;
+  background-color: rgb(185, 247, 185);
 }
 
 .primary-nav li {
