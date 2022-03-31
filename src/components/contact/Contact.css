@@ -1,0 +1,133 @@
+.c {
+  height: 100vh;
+  position: relative;
+}
+
+.c-container {
+  display: flex;
+  padding: 50px;
+}
+
+.c-head {
+  font-size: 50px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.c-left {
+  flex: 1;
+}
+
+.c-right {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+.c-title {
+  font-size: 30px;
+  width: 70%;
+  margin: 5px 0;
+}
+
+.c-text {
+  font-size: 18px;
+  padding: 5px 0;
+  line-height: 1.5em;
+}
+
+.c-info-item {
+  display: flex;
+  margin: 50px 0;
+  align-items: center;
+  font-weight: 300;
+  width: 70%;
+}
+
+.c-icon {
+  width: 30px;
+  height: 30px;
+  margin-right: 20px;
+}
+
+.form {
+  margin-left: 80px;
+  width: 80%;
+  position: relative;
+}
+
+h4 {
+  font-size: 1.2em;
+  padding: 5px 0;
+}
+
+input {
+  width: 80%;
+  height: 40px;
+  margin: 10px 0;
+  font-size: 16px;
+  padding-left: 10px;
+  border: 1px solid #333;
+  border-radius: 5px;
+}
+
+textarea {
+  width: 80%;
+  margin: 10px 0;
+  font-size: 16px;
+  padding-left: 10px;
+  border: 1px solid #333;
+  border-radius: 5px;
+}
+
+button {
+  height: 40px;
+  padding: 10px 20px;
+  position: absolute;
+  left: 40%;
+  transform: translate(-50%, 50%);
+  cursor: pointer;
+  border: none;
+  background-color: rgb(10, 214, 10);
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+@media screen and (max-width: 480px) {
+  .c-container {
+    flex-direction: column;
+    padding: 0 50px;
+  }
+
+  .c-title {
+    font-size: 20px;
+  }
+
+  .c-info-item {
+    margin: 20px 0;
+    width: 100%;
+  }
+
+  form {
+    margin-top: 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  input {
+    width: 35%;
+    margin: 10px;
+    margin-left: 0;
+  }
+
+  button {
+    margin-top: 10px;
+  }
+}

@@ -1,0 +1,43 @@
+.navbar {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  background-color: rgb(134, 133, 133);
+  display: flex;
+  z-index: 2;
+}
+
+.logo img {
+  max-width: 90px;
+  margin: 10px 0 0 50px;
+}
+
+.primary-nav {
+  display: flex;
+  position: absolute;
+  top: 0;
+  right: 50px;
+}
+
+.primary-nav li {
+  display: inline-block;
+  margin: 20px;
+  color: #333;
+  font-size: 16pt;
+}
+
+.primary-nav a {
+  text-decoration: none;
+  padding-bottom: 5px;
+  -webkit-transition: border 50ms linear;
+  -moz-transition: border 50ms linear;
+  -o-transition: border 50ms linear;
+  -ms-transition: border 50ms linear;
+  transition: border 50ms linear;
+}
+
+.primary-nav a:hover {
+  color: blue;
+}
