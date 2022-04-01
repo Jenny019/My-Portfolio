@@ -9,7 +9,7 @@ import { Link } from 'react-router-dom';
 const Footer = () => {
   return (     
 		<div className = "footer">
-			<div className = "footer-img">
+			{/* <div className = "footer-img">
         <div className = "facebook">
           <a href = "#"><img className="img-responsive" src={facebook} /></a>								
         </div>
@@ -22,7 +22,7 @@ const Footer = () => {
         <div className = "email-icon">
           <a href = "#"><img className="img-responsive" src={email} /></a>
         </div>
-      </div>   
+      </div>    */}
       <div className="footer-list">
         <ul>
           <li><Link to="/home">Home</Link></li>
