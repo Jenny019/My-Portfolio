@@ -36,6 +36,11 @@
   font-size: 18px;
   padding: 5px 0;
   line-height: 1.5em;
+  text-align: justify;
+}
+
+.c-sub-text {
+  margin-top: 20px;
 }
 
 .c-info-item {
@@ -51,6 +56,16 @@
   height: 30px;
   margin-right: 20px;
 }
+
+.link {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
 
 .form {
   margin-left: 80px;

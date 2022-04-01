@@ -1,5 +1,6 @@
 import React from 'react';
 import Phone from '../../images/phone.png';
+import Github from '../../images/github.png';
 import Email from '../../images/email.png';
 // import Address from '../../images/address.png';
 import './Contact.css';
@@ -13,13 +14,18 @@ const Contact = () => {
       <div className='c-container'>              
         <div className='c-left'>
           <h3 className='c-title'>Reaching out to me</h3>
-          <p className='c-text'>Don't hesitate to contact me! I'm happy to answer any questions, provide more information, or just have a nice conversation! Fill out the form below to being reaching out to me. If you prefer another email client other than your default, you can email me at the following address.</p>
+          <p className='c-text'>Don't hesitate to contact me! I'm happy to answer any questions, provide more information, or just have a nice conversation! If you have any intersteing ideas, please let me know! I am always willing to talk and learn new things. 
+          <br />
+          <br />
+          Please fill out the form below to being reaching out to me. Feel free to visit my GitHub! If you prefer another email client other than your default, you can email me at the following address.</p>
+          <h2 className='c-sub-text'>Let's start to talk and keep in touch!</h2>
           <div className='c-info'>
             <div className='c-info-item'>
-              <img src={Phone} alt='phone' className='c-icon' /> +1 123 456 7888 
+              <img src={Github} alt='Github' className='c-icon' /> 
+              <a href='https://github.com/Jenny019' target='_blank' className='link'>Visit My GitHub</a>
             </div>
             <div className='c-info-item'>
-              <img src={Email} alt='email' className='c-icon' /> jenny@gmail.com 
+              <img src={Email} alt='email' className='c-icon' /> jennyyang20220214@gmail.com 
             </div>
             {/* <div className='c-info-item'>
               <img src={Address} alt='address' className='c-icon' /> 123 Main Street, Glen Burnine, MD, 21061 
