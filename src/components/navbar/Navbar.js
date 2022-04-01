@@ -6,8 +6,7 @@ import './Navbar.css';
 
 const NavBar = () => {
   return (
-    <div className='navbar-container'>
-      <div className='navbar'>
+    <div className='navbar'>
       <div className='logo'>
         <a href="">
           <img src={ J } alt="logo" className='narbar-logo' />
@@ -15,16 +14,14 @@ const NavBar = () => {
       </div>
 
       <div className='primary-nav'>
-        <ul>
+        <ul className='ul-list'>
           <li><Link to="/home">Home</Link></li>
           <li><Link to="/about">About</Link></li>
           <li><Link to="/projects">Projects</Link></li>
           <li><Link to="/contact">Contact</Link></li>
         </ul>
       </div>
-    </div>
-    </div>
-    
+    </div>   
   )
 }
 

@@ -28,7 +28,7 @@ const About = () => {
         <h2 className='about-title sub'>Statistics</h2>
         <br></br>
         <p>Female, always be optimistic and enthusiastic </p>
-        <p>Favorite fonts: Roboto </p>
+        <p>Willing to share, helpful </p>
         <p>Loves to learn new things</p>
 
         <div className='about-btn'>
