@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import logo from '../../images/logo.svg';
+// import logo from '../../images/logo.svg';
+import J from '../../images/J.jpeg';
 import './Navbar.css';
 
 const NavBar = () => {
@@ -9,7 +10,7 @@ const NavBar = () => {
       <div className='navbar'>
       <div className='logo'>
         <a href="">
-          <img src={ logo } alt="logo" className='narbar-logo' />
+          <img src={ J } alt="logo" className='narbar-logo' />
         </a>
       </div>
 

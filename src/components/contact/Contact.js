@@ -1,7 +1,7 @@
 import React from 'react';
 import Phone from '../../images/phone.png';
 import Email from '../../images/email.png';
-import Address from '../../images/address.png';
+// import Address from '../../images/address.png';
 import './Contact.css';
 
 const Contact = () => {
@@ -21,9 +21,9 @@ const Contact = () => {
             <div className='c-info-item'>
               <img src={Email} alt='email' className='c-icon' /> jenny@gmail.com 
             </div>
-            <div className='c-info-item'>
+            {/* <div className='c-info-item'>
               <img src={Address} alt='address' className='c-icon' /> 123 Main Street, Glen Burnine, MD, 21061 
-            </div>
+            </div> */}
           </div>
         </div>
 
