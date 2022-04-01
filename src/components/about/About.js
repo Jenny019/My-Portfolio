@@ -15,14 +15,15 @@ const About = () => {
       <div className='about-right'>
         <h1 className='about-title'>About Me</h1>
         <h2 className='about-title sub'>General Overview</h2>
+        <br />
         <p className='about-sub'>
-          Hello, everyone! my name is Jenny. I have over 5 years’ experience in the IT industry, mainly focused on front-end development. My tech stack includes HTML, CSS, JavaScript, React, MongoDB, Node.js, TypeScript, Java, and C / C++.  
+          Hello, everyone! my name is Jenny. I have over 5 years’ experience in the IT industry, mainly focused on front-end development. My tech stack includes <strong> HTML, CSS, JavaScript, React, MongoDB, Node.js, TypeScript, Java, and C / C++.</strong>  
           <br /> 
           <br />      
-          I love coding, travelling, reading, watching movies, cooking and hiking. Keep learning and updating myself helps me not to fall behind and enjoy the life. 
+          <strong>I love to slove problems.</strong> Whether it's finding the most elegant way to write a line of code or figuring out which color is more satisfying in UI design. I love the challenge of <i>finding a way and discovering solutions.</i>
           <br />
           <br />  
-          "Genius is only a piece of quality of a material is distinct fields, learning is fertilizer and cultivation." I love to learn new things, especially the fast changed and new knowledge and tools in computer science.
+          <i>"Genius is only a piece of quality of a material is distinct fields, learning is fertilizer and cultivation."</i> I love to learn new things, especially the fast changed knowledge and new tools in computer science.
         </p>
 
         <h2 className='about-title sub'>Statistics</h2>
