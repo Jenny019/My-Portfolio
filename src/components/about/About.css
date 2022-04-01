@@ -75,18 +75,13 @@
   position: absolute;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: rgb(99, 98, 98);
-  color: #fff;
+  /* color: #fff; */
 }
 
 .about-btn a {
-  color: #fff;
+  /* color: #fff; */
   padding: 20px;
   text-decoration: none;
-}
-
-.about-btn:hover {
-  background-color: #fff;
 }
 
 .about-btn a:hover {

@@ -17,9 +17,12 @@ const About = () => {
         <h2 className='about-title sub'>General Overview</h2>
         <p className='about-sub'>
           Hello, everyone! my name is Jenny. I have over 5 years’ experience in the IT industry, mainly focused on front-end development. My tech stack includes HTML, CSS, JavaScript, React, MongoDB, Node.js, TypeScript, Java, and C / C++.  
-        </p>
-        <p>
-          I love coding, travelling, reading, watching movies, cooking and hiking. Let us learn and make progress together.
+          <br /> 
+          <br />      
+          I love coding, travelling, reading, watching movies, cooking and hiking. Keep learning and updating myself helps me not to fall behind and enjoy the life. 
+          <br />
+          <br />  
+          "Genius is only a piece of quality of a material is distinct fields, learning is fertilizer and cultivation." I love to learn new things, especially the fast changed and new knowledge and tools in computer science.
         </p>
 
         <h2 className='about-title sub'>Statistics</h2>
