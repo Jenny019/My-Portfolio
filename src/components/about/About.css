@@ -76,6 +76,8 @@
   position: absolute;
   left: 50%;
   transform: translate(-50%, -50%);
+  background-color: rgb(161, 227, 46);
+  color: #333;
 }
 
 .about-btn a {
@@ -84,7 +86,7 @@
 }
 
 .about-btn a:hover {
-  color: blue;
+  color: rgb(36, 36, 237);
 }
 
 @media screen and (max-width: 480px) {

@@ -1,7 +1,7 @@
 import React from 'react';
 import './About.css';
 import Computer from '../../images/computer.jpeg';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 
 const About = (props) => {
   return (
@@ -32,9 +32,9 @@ const About = (props) => {
         <p>Willing to share, helpful </p>
         <p>Loves to learn new things</p>
 
-        <div className='about-btn' onClick={props.onClickEvent}>
+        <button className='about-btn' onClick={props.onClickEvent}>
           Contact
-        </div>
+        </button>
       </div>
     </div>
   )
