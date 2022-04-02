@@ -5,12 +5,27 @@ import ProjectList from '../projectList/ProjectList';
 import Contact from '../contact/Contact';
 
 export default function Home() {
+  const contactRef = React.useRef(null);
+  const scrollToBottom = () => {
+    contactRef.current.scrollIntoView({
+      behavior: "smooth",
+      block: "nearest",
+      inline: "start"
+    });
+  };
+
+  const onClickEvent = (e) => {
+    if (contactRef.current) {
+      scrollToBottom();
+    }
+  }
+
   return (
     <>
       <Intro />
-      <About />
+      <About onClickEvent={onClickEvent}/>
       <ProjectList />
-      <Contact />
+      <Contact refObj={contactRef} />
     </>
   )
 }

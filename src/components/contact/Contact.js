@@ -5,9 +5,9 @@ import Email from '../../images/email.png';
 // import Address from '../../images/address.png';
 import './Contact.css';
 
-const Contact = () => {
+const Contact = (props) => {
   return (
-    <div className='c'>
+    <div className='c' ref={props.refObj}>
       <div className='c-header'>
         <h1 className='c-head'>Contact</h1>
       </div>

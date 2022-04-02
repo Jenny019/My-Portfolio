@@ -3,7 +3,7 @@ import './About.css';
 import Computer from '../../images/computer.jpeg';
 import { Link } from 'react-router-dom';
 
-const About = () => {
+const About = (props) => {
   return (
     <div className='about'>
       <div className='about-left'>
@@ -32,8 +32,8 @@ const About = () => {
         <p>Willing to share, helpful </p>
         <p>Loves to learn new things</p>
 
-        <div className='about-btn'>
-          <Link to="/contact">Contact</Link>
+        <div className='about-btn' onClick={props.onClickEvent}>
+          Contact
         </div>
       </div>
     </div>
