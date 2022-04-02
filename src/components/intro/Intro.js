@@ -12,12 +12,12 @@ const Intro = () => {
                 <div className='intro-title'>
                     <div className='intro-title-wrapper'>
                         <div className='intro-title-item'>UI Developer</div>
-                        <div className='intro-title-item'>UX Desinger</div>
+                        <div className='intro-title-item'>UX Designer</div>
                         <div className='intro-title-item'>Problem Solver</div>
                     </div>
                 </div>
                 <p className='intro-desc'>
-                    I am a UI Developer, a UX Desinger, a Problem Solver.
+                    I am a UI Developer, a UX Designer, a Problem Solver.
                     I love coding and I love using React to build wonderful components.
                 </p>
             </div>
