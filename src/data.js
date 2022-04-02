@@ -4,6 +4,8 @@ import Game from "./images/game.png";
 import Pokedex from "./images/pokedex.png";
 import Movies from "./images/movies.png";
 import Home from "./images/home.png";
+import TodoList from "./images/todoList.png";
+import Password from "./images/password.png";
 import Flip from "./images/flip.png";
 
 
@@ -49,6 +51,28 @@ const projects = [
     img: Flip,
     title: "Flip",
     desc: "By clicking up and down, you cna change the webpage.",
+    link: "#",
+  },
+  {
+    id: 7,
+    img: TodoList,
+    title: "TodoList",
+    desc: "It is a todo list app created by HTML, CSS and JavaScript",
+    link: "#",
+   
+  },
+  {
+    id: 8,
+    img: Home,
+    title: "Home",
+    desc: "It is a mobile first app which show the home page of a simple page",
+    link: "#",
+  },
+  {
+    id: 9,
+    img: Password,
+    title: "Password",
+    desc: "It is a password generator to generate random password, which is created by HTML, CSS, and JavaScript",
     link: "#",
   },
 ];
