@@ -1,5 +1,5 @@
 import React from 'react';
-import Phone from '../../images/phone.png';
+// import Phone from '../../images/phone.png';
 import Github from '../../images/github.png';
 import Email from '../../images/email.png';
 // import Address from '../../images/address.png';

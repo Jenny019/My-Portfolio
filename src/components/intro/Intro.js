@@ -1,6 +1,7 @@
 import React from 'react';
 import Me from '../../images/Me.jpeg';
 import './Intro.css';
+// import { Type } from '../contact/Contact';
 
 const Intro = (props) => {
   return (
