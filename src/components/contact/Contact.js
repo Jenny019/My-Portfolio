@@ -51,7 +51,7 @@ const Contact = (props) => {
               <h4>Message *</h4>
               <textarea rows='5' placeholder='Message'></textarea>
             </div>
-            <button className='c-btn'>Submit</button>
+            <button type="button" className='c-btn' onClick={e=>props.onClickEvent(e, Type.ABOUT)}>Submit</button>
           </form>       
         </div>
       </div>
@@ -59,4 +59,8 @@ const Contact = (props) => {
   )
 }
 
+export class Type {
+  static CONTACT='contact';
+  static ABOUT='about';
+}
 export default Contact;

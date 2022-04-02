@@ -2,10 +2,11 @@ import React from 'react';
 import './About.css';
 import Computer from '../../images/computer.jpeg';
 // import { Link } from 'react-router-dom';
+import { Type } from '../contact/Contact';
 
 const About = (props) => {
   return (
-    <div className='about'>
+    <div className='about' ref={props.refObj}>
       <div className='about-left'>
         <div className='about-card bg'></div>
         <div className='about-card'>
@@ -32,7 +33,7 @@ const About = (props) => {
         <p>Willing to share, helpful </p>
         <p>Loves to learn new things</p>
 
-        <button className='about-btn' onClick={props.onClickEvent}>
+        <button className='about-btn' onClick={e=>props.onClickEvent(e, Type.CONTACT)}>
           Contact
         </button>
       </div>

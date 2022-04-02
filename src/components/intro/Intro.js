@@ -2,9 +2,9 @@ import React from 'react';
 import Me from '../../images/Me.jpeg';
 import './Intro.css';
 
-const Intro = () => {
+const Intro = (props) => {
   return (
-    <div className='intro'>
+    <div className='intro' ref={props.refObj}>
         <div className='intro-left'>
             <div className='intro-left-wrapper'>
                 <h2 className='intro-intro'>Hello, my name is</h2>
