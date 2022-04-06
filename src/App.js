@@ -2,7 +2,7 @@ import Home from './components/home/Home';
 import About from './components/about/About';
 import ProjectList from './components/projectList/ProjectList';
 import Contact from './components/contact/Contact';
-import Navbar from './components/navbar/Navbar';
+import NaviBar from './components/navbar/NaviBar';
 import Footer from './components/footer/Footer';
 
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
@@ -12,7 +12,7 @@ function App() {
   return (
     <div className="App">
       <Router>
-        <Navbar />
+        <NaviBar />
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/home' element={<Home />} />
