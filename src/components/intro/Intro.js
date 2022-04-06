@@ -2,6 +2,7 @@ import React from 'react';
 import Me from '../../images/Me.jpeg';
 import './Intro.css';
 // import { Type } from '../contact/Contact';
+// import Image from 'react-bootstrap/Image';
 
 const Intro = (props) => {
   return (
@@ -12,13 +13,13 @@ const Intro = (props) => {
                 <h1 className='intro-name'>Jenny Yang</h1>
                 <div className='intro-title'>
                     <div className='intro-title-wrapper'>
-                        <div className='intro-title-item'>UI Developer</div>
-                        <div className='intro-title-item'>UX Designer</div>
+                        <div className='intro-title-item'>Front-end  Developer</div>
+                        {/* <div className='intro-title-item'>UX Designer</div> */}
                         <div className='intro-title-item'>Problem Solver</div>
                     </div>
                 </div>
                 <p className='intro-desc'>
-                    I am a UI Developer, a UX Designer, a Problem Solver.
+                    I am a Front-end Developer, a Problem Solver.
                     I love coding and I love using React to build wonderful components.
                 </p>
             </div>

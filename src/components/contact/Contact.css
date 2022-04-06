@@ -97,7 +97,7 @@ textarea {
   border-radius: 5px;
 }
 
-button {
+/* button {
   height: 40px;
   padding: 10px 20px;
   position: absolute;
@@ -108,12 +108,12 @@ button {
   background-color: rgb(10, 214, 10);
   border-radius: 5px;
   font-size: 16px;
-}
+} */
 
-button:hover {
+/* button:hover {
   background-color: #333;
   color: #fff;
-}
+} */
 
 @media screen and (max-width: 480px) {
   .c-container {

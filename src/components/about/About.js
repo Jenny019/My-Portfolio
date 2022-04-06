@@ -3,6 +3,7 @@ import './About.css';
 import Computer from '../../images/computer.jpeg';
 // import { Link } from 'react-router-dom';
 import { Type } from '../contact/Contact';
+import Button from 'react-bootstrap/Button';
 
 const About = (props) => {
   return (
@@ -33,9 +34,13 @@ const About = (props) => {
         <p>Willing to share, helpful </p>
         <p>Loves to learn new things</p>
 
-        <button className='about-btn' onClick={e=>props.onClickEvent(e, Type.CONTACT)}>
+        {/* <button className='about-btn' onClick={e=>props.onClickEvent(e, Type.CONTACT)}>
           Contact
-        </button>
+        </button> */}
+        <div className='mb-2'>
+          <Button variant="primary" size="lg" onClick={e=>props.onClickEvent(e, Type.CONTACT)}>Contact</Button>
+        </div>
+        {/* <Button variant="primary" size="lg" onClick={e=>props.onClickEvent(e, Type.CONTACT)}>Contact</Button> */}
       </div>
     </div>
   )

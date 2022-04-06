@@ -3,6 +3,7 @@ import React from 'react';
 import Github from '../../images/github.png';
 import Email from '../../images/email.png';
 // import Address from '../../images/address.png';
+import { Button } from 'react-bootstrap';
 import './Contact.css';
 
 const Contact = (props) => {
@@ -51,7 +52,8 @@ const Contact = (props) => {
               <h4>Message *</h4>
               <textarea rows='5' placeholder='Message'></textarea>
             </div>
-            <button type="button" className='c-btn' onClick={e=>props.onClickEvent(e, Type.ABOUT)}>Submit</button>
+            {/* <button type="button" className='c-btn' onClick={e=>props.onClickEvent(e, Type.ABOUT)}>Submit</button> */}
+            <Button variant="outlint-success" type="submit" value="submit">submit</Button>{' '}
           </form>       
         </div>
       </div>
