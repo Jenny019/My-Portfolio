@@ -38,7 +38,7 @@ const About = (props) => {
           Contact
         </button> */}
         <div className='mb-2'>
-          <Button variant="primary" size="lg" onClick={e=>props.onClickEvent(e, Type.CONTACT)}>Contact</Button>
+          <Button variant="success" size="lg" onClick={e=>props.onClickEvent(e, Type.CONTACT)}>Contact</Button>
         </div>
         {/* <Button variant="primary" size="lg" onClick={e=>props.onClickEvent(e, Type.CONTACT)}>Contact</Button> */}
       </div>

@@ -3,7 +3,7 @@ import React from 'react';
 import Github from '../../images/github.png';
 import Email from '../../images/email.png';
 // import Address from '../../images/address.png';
-import { Button } from 'react-bootstrap';
+import { Button, Form } from 'react-bootstrap';
 import './Contact.css';
 
 const Contact = (props) => {
@@ -35,7 +35,7 @@ const Contact = (props) => {
         </div>
 
         <div className='c-right'>
-          <form className='form'>
+          {/* <form className='form'>
             <div className='firstname'>
               <h4>First Name *</h4>
               <input type="text" placeholder='First Name' />
@@ -52,9 +52,28 @@ const Contact = (props) => {
               <h4>Message *</h4>
               <textarea rows='5' placeholder='Message'></textarea>
             </div>
-            {/* <button type="button" className='c-btn' onClick={e=>props.onClickEvent(e, Type.ABOUT)}>Submit</button> */}
-            <Button variant="outlint-success" type="submit" value="submit">submit</Button>{' '}
-          </form>       
+            <button type="button" className='c-btn' onClick={e=>props.onClickEvent(e, Type.ABOUT)}>Submit</button>
+          </form>        */}
+
+          <Form>           
+            <Form.Group className="mb-3" controlId='formGroupFirstName'>
+              <Form.Label>First Name *</Form.Label>
+              <Form.Control type="text" placeholder="First Name" />
+            </Form.Group>
+            <Form.Group className="mb-3" controlId='formGroupLastName'>
+              <Form.Label>Last Name *</Form.Label>
+              <Form.Control type="text" placeholder="Last Name" />
+            </Form.Group>
+            <Form.Group className="mb-3" controlId='formGroupEmail'>
+              <Form.Label>Email *</Form.Label>
+              <Form.Control type="email" placeholder="Email" />
+            </Form.Group>
+            <Form.Group className="mb-3" controlId='formGroupMessage'>
+              <Form.Label>Message *</Form.Label>
+              <Form.Control as="textarea" row={5}/>
+            </Form.Group>
+          </Form>
+          <Button variant="success" type="submit">submit</Button>
         </div>
       </div>
     </div>

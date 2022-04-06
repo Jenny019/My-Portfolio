@@ -16,7 +16,7 @@ const Project = ({img, desc}) => {
 
         <div className='pro-text'>
           <h4>{desc}</h4>
-          <a href='#' className='pro-btn'>Read More</a>
+          {/* <a href='#' className='pro-btn'>Read More</a> */}
         </div>
       </div> 
     </div>

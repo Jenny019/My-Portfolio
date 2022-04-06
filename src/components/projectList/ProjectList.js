@@ -18,8 +18,6 @@ const ProjectList = () => {
         ))}       
       </div>
       <div className='pl-load'>
-        {/* <a style={{display: count < projects.length? 'block': 'none'}} onClick={e => {count < projects.length? setCount(count+3): setCount(count)}} className='pl-btn'>More Projects</a> */}
-
         <Button variant="success" size="lg" style={{display: count < projects.length? 'block': 'none'}} onClick={e => {count < projects.length? setCount(count+3): setCount(count)}}>More Project</Button>
       </div>  
   </div>
