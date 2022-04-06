@@ -32,8 +32,6 @@ const NaviBar = () => {
             </Nav>
           </Container>
         </Navbar>
-
-
       </div>
     </div>   
   )
