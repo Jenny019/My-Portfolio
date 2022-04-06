@@ -20,7 +20,7 @@ const Intro = (props) => {
                 </div>
                 <p className='intro-desc'>
                     I am a Front-end Developer, a Problem Solver.
-                    I love coding and I love using React to build wonderful components.
+                    I love coding and I love using React to build wonderful applications.
                 </p>
             </div>
         </div>

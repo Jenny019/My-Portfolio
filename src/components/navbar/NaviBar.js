@@ -8,28 +8,20 @@ import ToggleSwitch from '../switch/ToggleSwitch';
 
 const NaviBar = () => {
 
-  const scrollTo = () => {
-    window.scrollTo({
-        top: 100000,
-        left: 0,
-        behavior: "smooth"
-    })
-  }
-
-  const toggleDarkMode = (e) =>  {
-    document.documentElement.classList.toggle('dark-mode')
-    document.getElementById('not-dark').classList.toggle('inverse-dark')
-    document.getElementById('not-dark2').classList.toggle('inverse-dark')
-    var x = document.getElementsByClassName('img-pro')
-    for(let i = 0; i < x.length; i += 1) {
-        x.item(i).classList.toggle("inverse-dark");
-    }
+  // const toggleDarkMode = (e) =>  {
+  //   document.documentElement.classList.toggle('dark-mode')
+  //   document.getElementById('not-dark').classList.toggle('inverse-dark')
+  //   document.getElementById('not-dark2').classList.toggle('inverse-dark')
+  //   var x = document.getElementsByClassName('img-pro')
+  //   for(let i = 0; i < x.length; i += 1) {
+  //       x.item(i).classList.toggle("inverse-dark");
+  //   }
     
-    if (document.documentElement.classList.contains('dark-mode'))
-      localStorage.setItem('mode', 'Dark')
-    else
-      localStorage.setItem('mode', 'Light')
-  }
+  //   if (document.documentElement.classList.contains('dark-mode'))
+  //     localStorage.setItem('mode', 'Dark')
+  //   else
+  //     localStorage.setItem('mode', 'Light')
+  // }
 
   return (
     <div className='navbar'>
@@ -38,18 +30,16 @@ const NaviBar = () => {
           <img src={ Jicon } alt="logo" className='narbar-logo' />
         </a>
       </div>
-
-     
+    
         {/* <label className="switch">
           <input id="mode-switch" onClick={e => toggleDarkMode(e)} type="checkbox"/>
           <span className="slider round">Hello</span>
         </label> */}
+
         {/* <div className='switch'>
           <ToggleSwitch id="mode-switch" onClick={e => toggleDarkMode(e)}/>
         </div> */}
         
-
-
       <div className='primary-nav'>
         <Navbar variant='primary' expand="lg">
           <Container>
