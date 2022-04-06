@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import './ProjectList.css';
 import Project from '../project/Project';
-import projects from '../../data'
+import projects from '../../data';
+import Button from 'react-bootstrap/Button';
 
 const ProjectList = () => {
   const [count, setCount] = useState(3);
@@ -17,9 +18,11 @@ const ProjectList = () => {
         ))}       
       </div>
       <div className='pl-load'>
-      <a style={{display: count < projects.length? 'block': 'none'}} onClick={e => {count < projects.length? setCount(count+3): setCount(count)}} className='pl-btn'>More Projects</a>
-  </div>  
-    </div>
+        {/* <a style={{display: count < projects.length? 'block': 'none'}} onClick={e => {count < projects.length? setCount(count+3): setCount(count)}} className='pl-btn'>More Projects</a> */}
+
+        <Button variant="success" size="lg" style={{display: count < projects.length? 'block': 'none'}} onClick={e => {count < projects.length? setCount(count+3): setCount(count)}}>More Project</Button>
+      </div>  
+  </div>
   )
 }
 
