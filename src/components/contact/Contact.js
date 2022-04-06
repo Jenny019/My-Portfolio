@@ -53,9 +53,10 @@ const Contact = (props) => {
               <Form.Control as="textarea" row={5}/>
             </Form.Group>
           </Form>
-          <Button variant="success" type="submit">submit</Button>
+          <Button variant="success" type="submit" onClick={e=>props.onClickEvent(e, Type.ABOUT)}>Send Message</Button>
         </div>
       </div>
+      <hr />
     </div>
   )
 }

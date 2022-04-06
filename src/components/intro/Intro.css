@@ -82,6 +82,8 @@
   max-height: 80%;
   object-fit: cover;
   position: absolute;
+  border-radius: 20px;
+  /* box-shadow: 5px 5px 10px rgb(170, 168, 168); */
 }
 
 @media screen and (max-width: 480px) {

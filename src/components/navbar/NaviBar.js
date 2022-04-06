@@ -4,8 +4,33 @@ import { Link } from 'react-router-dom';
 import Jicon from '../../images/Jicon.jpeg';
 import './Navibar.css';
 import { Navbar, Container, Nav } from 'react-bootstrap';
+import ToggleSwitch from '../switch/ToggleSwitch';
 
 const NaviBar = () => {
+
+  const scrollTo = () => {
+    window.scrollTo({
+        top: 100000,
+        left: 0,
+        behavior: "smooth"
+    })
+  }
+
+  const toggleDarkMode = (e) =>  {
+    document.documentElement.classList.toggle('dark-mode')
+    document.getElementById('not-dark').classList.toggle('inverse-dark')
+    document.getElementById('not-dark2').classList.toggle('inverse-dark')
+    var x = document.getElementsByClassName('img-pro')
+    for(let i = 0; i < x.length; i += 1) {
+        x.item(i).classList.toggle("inverse-dark");
+    }
+    
+    if (document.documentElement.classList.contains('dark-mode'))
+      localStorage.setItem('mode', 'Dark')
+    else
+      localStorage.setItem('mode', 'Light')
+  }
+
   return (
     <div className='navbar'>
       <div className='logo'>
@@ -14,15 +39,19 @@ const NaviBar = () => {
         </a>
       </div>
 
-      <div className='primary-nav'>
-        {/* <ul className='ul-list'>
-          <li><Link to="/home">Home</Link></li>
-          <li><Link to="/about">About</Link></li>
-          <li><Link to="/projects">Projects</Link></li>
-          <li><Link to="/contact">Contact</Link></li>
-        </ul> */}
+     
+        {/* <label className="switch">
+          <input id="mode-switch" onClick={e => toggleDarkMode(e)} type="checkbox"/>
+          <span className="slider round">Hello</span>
+        </label> */}
+        {/* <div className='switch'>
+          <ToggleSwitch id="mode-switch" onClick={e => toggleDarkMode(e)}/>
+        </div> */}
+        
 
-        <Navbar variant='black' expand="lg">
+
+      <div className='primary-nav'>
+        <Navbar variant='primary' expand="lg">
           <Container>
             <Nav className="me-auto">
               <Nav.Link href="/home">Home</Nav.Link>

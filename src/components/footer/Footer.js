@@ -25,14 +25,7 @@ const Footer = () => {
         </div>
       </div>    */}
 
-      <div className="footer-navbar">
-        {/* <ul>
-          <li><Link to="/home">Home</Link></li>
-          <li><Link to="/about">About</Link></li>
-          <li><Link to="/projects">Projects</Link></li>
-          <li><Link to="/contact">Contact</Link></li>
-        </ul> */}
-
+      <div className="footer-navbar">       
         <Navbar variant='black' expand="lg">
           <Container>
             <Nav className="me-auto">
